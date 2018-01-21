@@ -33,10 +33,121 @@ input[type="radio"].visually-hidden {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
-.main-header {
+.main-header .container{
+	display: flex;
+	justify-content: space-between;
 
 }
 .container {
 	margin: 0 auto;
 	max-width: 940px;
+}
+.header-container {
+	background-color: #293449;
+}
+.main-header-logo {
+	position: absolute;
+	width: 220px;
+    height: 42px;
+    background-color: #ee3643;
+    border-bottom: 5px solid #b52933;
+}
+.main-header-logo img {
+	margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 12px;
+}
+.search-form {
+	position: relative;
+	margin-left: 220px;
+}
+.search-form input {
+	width: 270px;
+	height: 43px;
+	padding: 0 10px 0 40px;
+	color: #f0f1f2;
+	background-color: transparent;
+	border: none;
+}
+.search-form input::placeholder {
+	color:  #f0f1f2;
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+}
+.search-form label {
+	position: absolute;
+	top: 12px;
+	left: 15px;
+}
+.search-form:hover {
+	background-color: #212a3a;
+}
+.search-form:hover path {
+   fill: #ffffff;
+}
+input[type="search"]:focus + label path {
+   fill: #f0525d;
+}
+input[type="search"]:focus {
+	background-color: #ffffff;
+	color: #111111;
+}
+input[type="search"]:focus::placeholder {
+	color: #111111;	
+}
+.main-header .menu-list {
+	display: flex;
+}
+.main-header .menu-item {
+	position: relative;
+	width: 150px;
+	text-align: center;
+}
+.menu-item svg {
+	position: absolute;
+	left: 15px;
+	top: 12px;
+	fill: #6a7180;
+}
+.menu-item path {
+	fill: #6a7180;
+}
+.menu-list a {
+	display: block;
+}
+.menu-list a:not(.design) {
+	color: #ffffff;
+	padding: 12px 25px;
+}
+.menu-item .design {
+	color: #ffffff;
+	padding: 12px 0;
+}
+.menu-item:last-child {
+	background-color: #63a63e;
+}
+.menu-list a:hover:not(.design) {
+	background-color: #212a3a;
+}
+.menu-list a:active:not(.design) {
+	background-color: #161d29;
+	color: #999ca1;
+}
+.menu-item:hover:last-child {
+	background-color: #5fbb2d;
+}
+.menu-item:active:last-child {
+	background-color: #518534;
+}
+.menu-item .design:active {
+	color: #80a66b;
+}
+.menu-item a:hover + svg path,
+.menu-item a:hover + svg {
+	fill: #ffffff;
+}
+.menu-item a:active + svg path,
+.menu-item a:active + svg {
+	fill: #6a7180;
 }
