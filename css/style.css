@@ -33,7 +33,10 @@ input[type="radio"].visually-hidden {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
-.main-header .container{
+.main-header {
+	background-color: #f3f7f8;
+}
+.header-container .container{
 	display: flex;
 	justify-content: space-between;
 
@@ -150,4 +153,47 @@ input[type="search"]:focus::placeholder {
 .menu-item a:active + svg path,
 .menu-item a:active + svg {
 	fill: #6a7180;
+}
+.about {
+	margin-top: 45px;
+}
+.about .description {
+	font-size: 16px;
+	line-height: 21px;
+	font-style: italic; 
+	color: #ee3643;
+	margin: 0;
+	margin-left: 50px;
+	width: 195px;
+}
+.contacts .phone {
+	margin: 0;
+	position: relative;
+}
+.contacts .phone-number {
+	font-size: 21px;
+	line-height: 18px;
+	color: #ee3643;
+	border: 3px solid #ffffff;
+	padding: 8px 48px 8px 74px;
+}
+.contacts .phone-number::before {
+	content: "";
+	width: 19px;
+	height: 19px;
+	background-image: url(../img/icon-phone.svg);
+	position: absolute;
+	left: 13px;
+}
+.about .container {
+	display: flex;
+	justify-content: space-between;
+}
+.contacts .address {
+	margin: 0;
+	margin-top: 15px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #32425c;
+	margin-left: 10px; 
 }
