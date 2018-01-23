@@ -197,3 +197,59 @@ input[type="search"]:focus::placeholder {
 	color: #32425c;
 	margin-left: 10px; 
 }
+.authorization {
+	margin: 0;
+}
+.authorization a {
+	font-size: 21px;
+	line-height: 18px;
+	color: #000000;	
+	background-color: #ffffff;
+}
+.authorization a:hover {
+	color: #ee3643;
+}
+.authorization a:active {
+	color: #b2b2b2;
+}
+.authorization .login {
+	position: relative;
+	padding: 11px 27px 11px 48px;
+	margin-right: 10px;
+}
+.login svg {
+	position: absolute;
+	left: 15px;
+}
+.login:hover path,
+.login:hover polygon {
+	fill: #32425c;
+}
+.login:active path,
+.login:active polygon {
+	fill: #c5c5c5;
+}
+.authorization .registration {
+	padding: 11px 25px 11px 25px;
+}
+.main-navigation {
+	margin-top: 45px;
+}
+.site-navigation {
+	display: flex;
+	justify-content: space-between;
+	background-color: #32425c;
+	border-bottom: 5px solid #293449;
+	min-height: 60px;
+}
+.site-navigation li {
+	flex-grow: 1;
+	text-align: center;
+} 
+.site-navigation a {
+	color: #ffffff;
+	line-height: 17px;
+	padding: 10px;
+	display: block;
+    padding: 20px 25px;
+}
