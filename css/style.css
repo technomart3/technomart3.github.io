@@ -35,6 +35,7 @@ input[type="radio"].visually-hidden {
 }
 .main-header {
 	background-color: #f3f7f8;
+	padding-bottom: 70px;
 }
 .header-container .container{
 	display: flex;
@@ -240,7 +241,6 @@ input[type="search"]:focus::placeholder {
 	justify-content: space-between;
 	background-color: #32425c;
 	border-bottom: 5px solid #293449;
-	min-height: 60px;
 }
 .site-navigation li {
 	flex-grow: 1;
@@ -251,5 +251,47 @@ input[type="search"]:focus::placeholder {
 	line-height: 17px;
 	padding: 10px;
 	display: block;
-    padding: 20px 25px;
+    padding: 13px 25px;
+}
+.site-navigation a:hover {
+	background-color: #293449;
+}
+.site-navigation a:active {
+	background-color: #1d2739;
+	color: #868c95;
+}
+.promo {
+	margin-top: 60px;
+}
+.promo-list .promo-item {
+	width: 260px;
+	min-height: 93px;
+	padding: 15px 20px;
+}
+.promo-item h3 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	margin: 0;
+	margin-bottom: 30px;
+}
+.promo-item  a {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+.promo-item:first-child a {
+	background-color: rgba(189, 125, 0, 0.2);
+}
+.promo-item:first-child a:hover {
+	background-color: rgba(189, 125, 0, 0.3);
+}
+.promo-item:first-child a:active {
+	background-color: rgba(189, 125, 0, 0.4);
+}
+.promo-list .promo-item:first-child {
+	background-color: #ffbf47;
 }
