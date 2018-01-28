@@ -1,4 +1,5 @@
 body {
+	min-width: 1140px;
 	margin: 0;
 	padding: 0;
 	font-family: "Cuprum", Arial, sans-serif;
@@ -263,10 +264,61 @@ input[type="search"]:focus::placeholder {
 .promo {
 	margin-top: 60px;
 }
+.promo-list {
+	display: flex;
+	justify-content: space-between;
+}
 .promo-list .promo-item {
+	position: relative;
 	width: 260px;
 	min-height: 93px;
 	padding: 15px 20px;
+}
+.promo-list .promo-item:first-child {
+	background-color: #ffbf47;
+}
+.promo-item:first-child::before {
+	content: "";
+	position: absolute;
+	left: 210px;
+	top: 30px;
+	background-image: url(../img/icon-1.svg);
+	width: 44px;
+	height: 65px;
+}
+.promo-item:first-child::after {
+	content: "";
+	position: absolute;
+	left: 240px;
+	top: 0;
+	background-image: url(../img/new.png);
+	background-repeat: no-repeat;
+	width: 60px;
+	height: 60px;
+}
+.promo-list .promo-item:nth-child(2) {
+	background-color: #3bbce3;
+}
+.promo-item:nth-child(2)::before {
+	content: "";
+	position: absolute;
+	left: 190px;
+	top: 30px;
+	background-image: url(../img/icon-2.svg);
+	width: 75px;
+	height: 61px;
+}
+.promo-list .promo-item:last-child {
+	background-color: #dc91d8;
+}
+.promo-item:last-child::before {
+	content: "";
+	position: absolute;
+	left: 190px;
+	top: 30px;
+	background-image: url(../img/icon-3.svg);
+	width: 78px;
+	height: 62px;
 }
 .promo-item h3 {
 	font-size: 24px;
@@ -292,6 +344,118 @@ input[type="search"]:focus::placeholder {
 .promo-item:first-child a:active {
 	background-color: rgba(189, 125, 0, 0.4);
 }
-.promo-list .promo-item:first-child {
-	background-color: #ffbf47;
+.promo-item:nth-child(2) a {
+	background-color: rgba(42, 131, 158, 0.2);
+}
+.promo-item:nth-child(2) a:hover {
+	background-color: rgba(42, 131, 158, 0.3);
+}
+.promo-item:nth-child(2) a:active {
+	background-color: rgba(42, 131, 158, 0.4);
+}
+.promo-item:last-child a {
+	background-color: rgba(161, 111, 158, 0.2);
+}
+.promo-item:last-child a:hover {
+	background-color: rgba(161, 111, 158, 0.3);
+}
+.promo-item:last-child a:active {
+	background-color: rgba(161, 111, 158, 0.4);
+}
+.promo-other {
+	margin-top: 20px;
+}
+.slider .wrapper {
+	position: relative;
+}
+.slider-list-item {
+	display: none;
+	width: 620px;
+    min-height: 266px;
+    color: #ffffff;
+}
+.slider-list-item h2 {
+	font-size: 36px;
+	line-height: 30px;
+	font-weight: 700;
+	margin: 0;
+	text-transform: uppercase;
+}
+.slider-list-item span {
+	display: block;
+	margin: 0;
+	margin-top: 10px;
+	font-size: 18px;
+	line-height: 24px;
+}
+.slider-list-item:first-child {
+	background-image: url(../img/slider-1.jpg);
+	background-repeat: no-repeat;
+}
+.slider-list-item:last-child {
+	background-image: url(../img/slider-2.jpg);
+	background-repeat: no-repeat;
+}
+.slider-list-item .description {
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 20px 25px;
+}
+.slider-list-item a {
+	display: block;
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	margin-top: 100px;
+	margin-left: 25px;
+	background-color: #ee3643;
+	width: 195px;
+	text-align: center;
+	padding: 10px 0;
+	border-radius: 5px;
+}
+.slider-list-item a:hover {
+	background-color: #ca2c37;
+}
+.slider-list-item a:active {
+	background-color: #ba2732;
+}
+.slider input[type="radio"] {
+	display: none;
+}
+.slider-controls {
+	position: absolute;
+    top: 214px;
+    left: 297px;
+}
+.slider-controls label {
+	position: relative;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 8px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.slider-controls label::before {
+	content: "";
+	width: 10px;
+	height: 10px;
+	background-color: #ffffff;
+	position: absolute;
+	border-radius: 50%;
+}
+#slider-1:checked ~ .slider-controls .slider-controls-item-1::after,
+#slider-2:checked ~ .slider-controls .slider-controls-item-2::after {
+	content: "";
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	width: 6px;
+	height: 6px;
+	background-color: #ee3643;
+	border-radius: 50%;
+}
+#slider-1:checked ~ .slider-list .slider-list-item:first-child,
+#slider-2:checked ~ .slider-list .slider-list-item:last-child {
+	display: block;
 }
