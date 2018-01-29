@@ -268,11 +268,12 @@ input[type="search"]:focus::placeholder {
 	display: flex;
 	justify-content: space-between;
 }
-.promo-list .promo-item {
+.promo-list .promo-item,
+.promo-item-other {
 	position: relative;
 	width: 260px;
 	min-height: 93px;
-	padding: 15px 20px;
+	padding: 13px 20px;
 }
 .promo-list .promo-item:first-child {
 	background-color: #ffbf47;
@@ -320,20 +321,25 @@ input[type="search"]:focus::placeholder {
 	width: 78px;
 	height: 62px;
 }
-.promo-item h3 {
+.promo-item h3,
+.promo-item-other h3 {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 700;
 	margin: 0;
 	margin-bottom: 30px;
 }
-.promo-item  a {
-	font-size: 14px;
-	line-height: 18px;
-	text-transform: uppercase;
-	color: #ffffff;
-	padding: 10px 20px;
-	border-radius: 5px;
+.promo-item  a,
+.promo-item-other a {
+	display: block;
+    width: 135px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 10px 0;
+    border-radius: 5px;
 }
 .promo-item:first-child a {
 	background-color: rgba(189, 125, 0, 0.2);
@@ -366,6 +372,7 @@ input[type="search"]:focus::placeholder {
 	margin-top: 20px;
 }
 .slider .wrapper {
+	width: 620px;
 	position: relative;
 }
 .slider-list-item {
@@ -444,6 +451,40 @@ input[type="search"]:focus::placeholder {
 	position: absolute;
 	border-radius: 50%;
 }
+.slider-controls-buttons {
+	width: 580px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+}
+.slider-controls-buttons label {
+	position: relative;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+.slider-controls-buttons label:last-child {
+	margin-left: auto;
+}
+.slider-controls-buttons label::before {
+	content: "";
+	width: 24px;
+	height: 24px;
+	border: 3px solid #ffffff;
+	position: absolute;
+	transform: rotate(45deg);
+}
+.slider-controls-buttons label:first-child::before {
+	border-top-style: none;
+	border-right-style: none;
+}
+.slider-controls-buttons label:last-child::before {
+	border-left-style: none;
+	border-bottom-style: none;
+}
 #slider-1:checked ~ .slider-controls .slider-controls-item-1::after,
 #slider-2:checked ~ .slider-controls .slider-controls-item-2::after {
 	content: "";
@@ -458,4 +499,87 @@ input[type="search"]:focus::placeholder {
 #slider-1:checked ~ .slider-list .slider-list-item:first-child,
 #slider-2:checked ~ .slider-list .slider-list-item:last-child {
 	display: block;
+}
+.promo-item-other:first-child {
+	background-color: #8ed78f;
+}
+.promo-item-other:first-child a {
+	background-color: rgba(113, 159, 113, 0.2);
+}
+.promo-item-other:first-child a:hover {
+	background-color: rgba(113, 159, 113, 0.3);
+}
+.promo-item-other:first-child a:active {
+	background-color: rgba(113, 159, 113, 0.4);
+}
+.promo-item-other:first-child::before {
+	content: "";
+	width: 59px;
+	height: 72px;
+	position: absolute;
+	top: 30px;
+	right: 45px;
+	background-image: url(../img/icon-4.svg);
+	background-repeat: no-repeat;
+}
+
+.promo-item-other:last-child {
+	background-color: #ffc047;
+}
+.promo-item-other:last-child a {
+	background-color: rgba(175, 132, 50, 0.2);
+}
+.promo-item-other:last-child a:hover {
+	background-color: rgba(175, 132, 50, 0.3);
+}
+.promo-item-other:last-child a:active {
+	background-color: rgba(175, 132, 50, 0.4);
+}
+.promo-item-other:last-child::before {
+	content: "";
+	width: 80px;
+	height: 64px;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	background-image: url(../img/icon-5.svg);
+	background-repeat: no-repeat;
+}
+.promo-other .container {
+	display: flex;
+	justify-content: space-between;
+}
+.promo-list-other {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.popular-goods {
+	margin-top: 55px;
+}
+.heading h2 {
+	font-size: 30px;
+	line-height: 30px;
+	color: #32425c;
+	margin: 0;
+}
+.heading {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+	background-color: #f9f5f0;
+}
+.heading span {
+	text-transform: uppercase;
+}
+.heading a {
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #ee3643;
+	border-radius: 5px;
+	width: 253px;
+	padding: 10px 0;
 }
