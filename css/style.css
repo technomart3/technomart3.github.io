@@ -465,6 +465,7 @@ input[type="search"]:focus::placeholder {
 	width: 30px;
 	height: 30px;
 	cursor: pointer;
+	padding: 10px;
 }
 .slider-controls-buttons label:last-child {
 	margin-left: auto;
@@ -522,7 +523,6 @@ input[type="search"]:focus::placeholder {
 	background-image: url(../img/icon-4.svg);
 	background-repeat: no-repeat;
 }
-
 .promo-item-other:last-child {
 	background-color: #ffc047;
 }
@@ -582,4 +582,86 @@ input[type="search"]:focus::placeholder {
 	border-radius: 5px;
 	width: 253px;
 	padding: 10px 0;
+}
+.popular-goods .popular-list {
+	margin-top: 20px;
+}
+.popular-goods .popular-item {
+	width: 220px;
+	text-align: center;
+	border: 1px solid #eaeaea;
+}
+.popular-item a {
+	display: block;
+}
+.popular-item h3 {
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 700;
+	color: #000000;
+	margin: 0;
+	padding: 0 30px;
+}
+.popular-item span {
+	display: block;
+	margin-top: 10px;
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 18px;
+	color: #a9a9a9;
+	text-decoration: line-through;
+}
+.popular-item .price {
+	position: relative;
+	width: 120px;
+	padding: 10px 0;
+	margin: auto;
+    margin-top: 15px;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #ee3643;
+	border-radius: 5px;
+}
+.popular-item .price::before {
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 117px;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border-style: solid;
+    border-width: 18.8px 0 18.8px 20px;
+    border-color: transparent transparent transparent #ee3643;
+}
+.popular-item:hover {
+	box-shadow: 0 0 25px 0 #000000;
+	transition-duration: 0.2s;
+}
+.popular-item:hover img {
+	opacity: 0;
+	transition-duration: 0.2s;
+}
+.item-buttons button {
+	display: block;
+	width: 135px;
+	font-size: 14px;
+	padding: 0;
+	margin-left: 50px;
+	text-transform: uppercase;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.item-buttons .button-buy {
+	position: relative;
+	padding: 10px 0;
+	color: #ffffff;
+	background-color: #63a63e;
+	border-bottom: 3px solid #367315;
+}
+.button-buy svg {
+	position: absolute;
+	left: 12px;
+	fill: #92c178;
 }
