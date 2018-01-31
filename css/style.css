@@ -584,15 +584,30 @@ input[type="search"]:focus::placeholder {
 	padding: 10px 0;
 }
 .popular-goods .popular-list {
+	display: flex;
+	justify-content: space-between;
 	margin-top: 20px;
 }
 .popular-goods .popular-item {
+	position: relative;
 	width: 220px;
+	min-height: 320px;
 	text-align: center;
 	border: 1px solid #eaeaea;
 }
+.popular-goods .popular-item:last-child {
+	background-image: url(../img/new.png);
+	background-repeat: no-repeat;
+	background-position: 160px 0;
+} 
 .popular-item a {
 	display: block;
+}
+.popular-item img {
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 190px;
 }
 .popular-item h3 {
 	font-size: 18px;
@@ -600,6 +615,7 @@ input[type="search"]:focus::placeholder {
 	font-weight: 700;
 	color: #000000;
 	margin: 0;
+	margin-top: 180px;
 	padding: 0 30px;
 }
 .popular-item span {
@@ -622,6 +638,9 @@ input[type="search"]:focus::placeholder {
 	background-color: #ee3643;
 	border-radius: 5px;
 }
+.popular-item:nth-child(4) .price{
+	margin-top: 42px;
+}
 .popular-item .price::before {
 	content: "";
     position: absolute;
@@ -643,25 +662,61 @@ input[type="search"]:focus::placeholder {
 	opacity: 0;
 	transition-duration: 0.2s;
 }
-.item-buttons button {
+.popular-item:hover .item-buttons {
+ 	opacity: 1;
+	transition-duration: 0.1s;
+	transition-delay: 0.2s;
+}
+.item-buttons {
 	display: block;
+	opacity: 0;
+	margin: 0;
+	position: absolute;
+    top: 45px;
+}
+.item-buttons button {
 	width: 135px;
 	font-size: 14px;
 	padding: 0;
-	margin-left: 50px;
 	text-transform: uppercase;
 	border-radius: 5px;
 	cursor: pointer;
 }
 .item-buttons .button-buy {
 	position: relative;
-	padding: 10px 0;
+	padding: 11px 0;
+	margin-bottom: 7px;
 	color: #ffffff;
 	background-color: #63a63e;
-	border-bottom: 3px solid #367315;
+	box-shadow: inset 0 -3px 0 0 #367315;
 }
 .button-buy svg {
 	position: absolute;
 	left: 12px;
 	fill: #92c178;
+}
+.button-buy:hover {
+	background-color: #5fbb2d;
+}
+.button-buy:hover svg {
+	fill: #ffffff;
+}
+.button-buy:active {
+	background-color: #518534;
+	box-shadow: none;
+}
+.button-buy:active svg {
+	fill: #ffffff;
+}
+.item-buttons .button-bookmarks {
+	color: #32425c;
+	border: 3px solid #63a63e;
+	padding: 8px 0;
+}
+.button-bookmarks:hover {
+	border-color: #32425c;
+}
+.button-bookmarks:active {
+	color: #c1c6ce;
+	border-color: #c1c6ce;
 }
