@@ -858,8 +858,100 @@ input[type="search"]:focus::placeholder {
 	background-repeat: no-repeat;
 	background-position: 231px 13px;
 }
+.services-item:last-child p {
+	width: 280px;
+}
+.services-item:last-child .send-request {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #ff5357;
+	width: 195px;
+	padding: 10px 0;
+	margin-top: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.services-item:last-child .send-request:hover {
+	background-color: #ca2c37;
+}
+.services-item:last-child .send-request:active {
+	background-color: #ba2732;
+}
+.services-item:last-child {
+	background-image: url(../img/bg-3.png);
+	background-repeat: no-repeat;
+	background-position: 154px 0;
+}
 #services-1:checked ~ .services-list .services-item:first-child,
 #services-2:checked ~ .services-list .services-item:nth-child(2),
 #services-3:checked ~ .services-list .services-item:last-child {
 	display: block;
+}
+.about-technomart {
+	margin-top: 80px;
+}
+.technomart-description {
+	width: 545px;
+}
+.about-technomart h2 {
+	margin: 0;
+	font-size: 30px;
+	line-height: 24px;
+	color: #000000;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+.about-technomart .promo {
+	margin: 0;
+	margin-top: 30px;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	color: #000000;
+}
+.about-technomart .promo:last-of-type {
+	padding-right: 105px;
+}
+.companies-list {
+	margin-top: 25px;
+}
+.companies-list .companies-item {
+	position: relative;
+	font-size: 18px;
+	line-height: 20px;
+	color: #000000;
+	padding-left: 35px;
+}
+.companies-list .companies-item:not(:last-child) {
+	margin-bottom: 20px;
+}
+.companies-list .companies-item::before {
+	content: "";
+	width: 25px;
+	height: 2px;
+	background-color: #ee3643;
+	position: absolute;
+	top: 8px;
+	left: 10px;
+}
+.technomart-description .more-details {
+	display: block;
+	width: 220px;
+	text-align: center;
+	padding: 10px 0;
+	margin-top: 35px;
+	margin-left: 10px;
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #ee3643;
+	border-radius: 5px;
+}
+.technomart-description .more-details:hover {
+	background-color: #ca2c37;
+}
+.technomart-description .more-details:active {
+	background-color: #ba2732;
 }
