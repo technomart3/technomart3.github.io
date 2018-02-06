@@ -903,6 +903,10 @@ input[type="search"]:focus::placeholder {
 	text-transform: uppercase;
 	font-weight: 400;
 }
+.about-technomart .container {
+	display: flex;
+	justify-content: space-between;
+}
 .about-technomart .promo {
 	margin: 0;
 	margin-top: 30px;
@@ -940,6 +944,7 @@ input[type="search"]:focus::placeholder {
 	display: block;
 	width: 220px;
 	text-align: center;
+	text-transform: uppercase;
 	padding: 10px 0;
 	margin-top: 35px;
 	margin-left: 10px;
@@ -954,4 +959,73 @@ input[type="search"]:focus::placeholder {
 }
 .technomart-description .more-details:active {
 	background-color: #ba2732;
+}
+.contacts {
+	width: 300px;
+} 
+.contacts .map {
+	padding: 0;
+	margin-top: 35px;
+	cursor: pointer;
+}
+.contacts .write-us {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 10px 0;
+	margin-top: 40px;
+	width: 300px;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #ee3643;
+	border-radius: 5px;
+}
+.contacts .write-us:hover {
+	background-color: #ca2c37;
+}
+.contacts .write-us:active {
+	background-color: #ba2732;
+}
+.modal {
+	position: fixed;
+	top: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 620px;
+	border-top: 7px solid #ee3643;
+	background-color: #ffffff;
+	z-index: 2;
+	box-sizing: border-box;
+	padding: 0 80px;
+	padding-top: 50px;
+}
+.login-form .wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.login-form p {
+	margin: 0;
+}
+.login-form label {
+	display: block;
+	font-size: 18px;
+	line-height: 18px;
+	color: #000000;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.login-form input {
+	width: 186px;
+	border: 2px solid #999999;
+	border-radius: 3px;
+	padding: 7px 15px;
+}
+.login-form input::placeholder {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+}
+.login-form input:focus {
+	border-color: #656565;
+	outline: none;
 }
