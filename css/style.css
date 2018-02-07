@@ -18,6 +18,7 @@ ul {
 button {
 	border: none;
 	background: none;
+	cursor: pointer;
 }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -994,14 +995,18 @@ input[type="search"]:focus::placeholder {
 	width: 620px;
 	border-top: 7px solid #ee3643;
 	background-color: #ffffff;
+	box-shadow: 0 0 25px 5px #b8b8b8;
 	z-index: 2;
 	box-sizing: border-box;
-	padding: 0 80px;
 	padding-top: 50px;
 }
 .login-form .wrapper {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0 80px
+
 }
 .login-form p {
 	margin: 0;
@@ -1020,12 +1025,68 @@ input[type="search"]:focus::placeholder {
 	border-radius: 3px;
 	padding: 7px 15px;
 }
-.login-form input::placeholder {
+.login-form input,
+.login-form textarea {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 }
-.login-form input:focus {
+.login-form input:focus,
+.login-form textarea:focus {
 	border-color: #656565;
 	outline: none;
+}
+.login-form textarea {
+	width: 428px;
+	height: 78px;
+	padding: 14px;
+	border: 2px solid #999999;
+	border-radius: 3px;
+}
+.login-form .inscription {
+	margin-top: 20px;
+}
+.login-form .buttons {
+	min-height: 38px;
+	margin-top: 35px;
+	padding: 37px 80px;
+	background-color: #f4f4f4;
+}
+.login-form button[type="submit"] {
+	width: 100%;
+	padding: 10px 0;
+	background-color: #ee3643;
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	border-radius: 4px;
+}
+.login-form button[type="submit"]:hover {
+	background-color: #ca2c37;
+}
+.login-form button[type="submit"]:active {
+	background-color: #ba2732;
+}
+.login-form .button-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+}
+.login-form .button-close::before,
+.login-form .button-close::after {
+	content: "";
+    width: 25px;
+    height: 4px;
+    position: absolute;
+    left: 2px;
+    top: 12px;
+    background-color: #ee3643;
+}
+.login-form .button-close::before {
+	transform: rotate(45deg);
+}
+.login-form .button-close::after {
+	transform: rotate(-45deg);
 }
