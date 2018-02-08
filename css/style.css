@@ -721,6 +721,69 @@ input[type="search"]:focus::placeholder {
 	color: #c1c6ce;
 	border-color: #c1c6ce;
 }
+.modal-info {
+	position: fixed;
+	width: 620px;
+	top: 10px;
+	left: 50%;
+	margin-left: -310px;
+	background-color: #ffffff;
+	border-top: 7px solid #ee3643;
+	z-index: 2;
+}
+.modal-info h2 {
+	font-size: 30px;
+	line-height: 18px;
+	margin: 0;
+	color: #000000;
+	align-self: center;
+}
+.modal-info .heading-info {
+	display: flex;
+	padding: 48px 80px;
+}
+.modal-info .icon {
+	position: relative;
+	margin: 0;
+	margin-right: 30px;
+	width: 67px;
+	height: 67px;
+	background-color: #63a63e;
+	border-radius: 50%;
+}
+.modal-info .icon::before {
+	content: "";
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    width: 32px;
+    height: 15px;
+    border: 8px solid #ffffff;
+    border-top-style: none;
+    border-right-style: none;
+    transform: rotate(-45deg);
+}
+.modal-info .modal-buttons {
+	padding: 38px 80px;
+	background-color: #f1f1f1;
+}
+.modal-buttons a {
+    display: block;
+    width: 220px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #ee3643;
+    border-radius: 4px;
+}
+.modal-buttons a:hover {
+	background-color: #ca2c37;
+}
+.modal-buttons a:active {
+	background-color: #ba2732;
+}
 .popular-manufacturers {
 	margin-top: 20px;
 }
@@ -988,6 +1051,7 @@ input[type="search"]:focus::placeholder {
 	background-color: #ba2732;
 }
 .modal {
+	display: none;
 	position: fixed;
 	top: 100px;
 	left: 50%;
