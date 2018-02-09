@@ -233,7 +233,7 @@ input[type="search"]:focus::placeholder {
 	fill: #c5c5c5;
 }
 .authorization .registration {
-	padding: 11px 25px 11px 25px;
+	padding: 11px 24px 11px 24px;
 }
 .main-navigation {
 	margin-top: 45px;
@@ -722,6 +722,7 @@ input[type="search"]:focus::placeholder {
 	border-color: #c1c6ce;
 }
 .modal-info {
+	display: none;
 	position: fixed;
 	width: 620px;
 	top: 10px;
@@ -729,7 +730,11 @@ input[type="search"]:focus::placeholder {
 	margin-left: -310px;
 	background-color: #ffffff;
 	border-top: 7px solid #ee3643;
+	box-shadow: 0 15px 32px 0px #cccccc;
 	z-index: 2;
+}
+.modal-info .wrapper {
+	position: relative;
 }
 .modal-info h2 {
 	font-size: 30px;
@@ -764,25 +769,64 @@ input[type="search"]:focus::placeholder {
     transform: rotate(-45deg);
 }
 .modal-info .modal-buttons {
+	display: flex;
+	justify-content: space-between;
 	padding: 38px 80px;
 	background-color: #f1f1f1;
 }
-.modal-buttons a {
-    display: block;
+.modal-buttons a,
+.modal-buttons .continue {
+	display: block;
     width: 220px;
     padding: 10px 0;
     text-align: center;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
+    border-radius: 4px;
+}
+.modal-buttons a {
     color: #ffffff;
     background-color: #ee3643;
-    border-radius: 4px;
 }
 .modal-buttons a:hover {
 	background-color: #ca2c37;
 }
 .modal-buttons a:active {
 	background-color: #ba2732;
+}
+.modal-buttons .continue {
+	background-color: #ffffff;
+	outline: none;
+}
+.modal-buttons .continue:hover {
+	background-color: #fbf9f9;
+}
+.modal-buttons .continue:active {
+	background-color: #ebe9e9;
+}
+.modal-buttons .modal-close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 30px;
+	height: 30px;
+}
+.modal-buttons .modal-close::before,
+.modal-buttons .modal-close::after {
+	content: "";
+    width: 25px;
+    height: 4px;
+    position: absolute;
+    left: 2px;
+    top: 12px;
+    background-color: #ee3643;
+}
+.modal-buttons .modal-close::before {
+	transform: rotate(45deg);
+}
+.modal-buttons .modal-close::after {
+	transform: rotate(-45deg);
 }
 .popular-manufacturers {
 	margin-top: 20px;
@@ -955,6 +999,7 @@ input[type="search"]:focus::placeholder {
 }
 .about-technomart {
 	margin-top: 80px;
+	padding-bottom: 86px;
 }
 .technomart-description {
 	width: 545px;
@@ -1002,7 +1047,7 @@ input[type="search"]:focus::placeholder {
 	background-color: #ee3643;
 	position: absolute;
 	top: 8px;
-	left: 10px;
+	left: 0;
 }
 .technomart-description .more-details {
 	display: block;
@@ -1011,7 +1056,6 @@ input[type="search"]:focus::placeholder {
 	text-transform: uppercase;
 	padding: 10px 0;
 	margin-top: 35px;
-	margin-left: 10px;
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
@@ -1070,7 +1114,6 @@ input[type="search"]:focus::placeholder {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding: 0 80px
-
 }
 .login-form p {
 	margin: 0;
@@ -1153,4 +1196,34 @@ input[type="search"]:focus::placeholder {
 }
 .login-form .button-close::after {
 	transform: rotate(-45deg);
+}
+.footer-top {
+	background-color: #32425c;
+}
+.footer-top .footer-menu {
+	display: flex;
+	justify-content: space-between;
+}
+.footer-top .main-footer-logo {
+	background-color: #ee3643;
+	display: block;
+	width: 220px;
+	height: 63px;
+	border-bottom: 5px solid #b52933;
+}
+.main-footer-logo img {
+	margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 21px;
+}
+.footer-menu-list {
+	display: flex;
+	justify-content: space-between;
+	width: 550px;
+	margin-top: 40px;
+}
+.footer-menu-item a {
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff
 }
