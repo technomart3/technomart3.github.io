@@ -1424,3 +1424,46 @@ input[type="search"]:focus::placeholder {
 .user-profile:active path {
 	fill: #c5c5c5;
 }
+.user-deauthorization svg {
+	position: absolute;
+	top: 14px;
+	right: 10px;
+}
+.user-deauthorization:hover polygon,
+.user-deauthorization:hover path {
+	fill: #32425c;
+}
+.user-deauthorization:active polygon,
+.user-deauthorization:active path {
+	fill: #c5c5c5;
+}
+.user-authorization .user-details {
+	margin: 0;
+	margin-top: 10px;
+	margin-left: 18px;
+}
+.user-details a {
+	font-size: 16px;
+	color: #32425c;
+	text-decoration: underline;
+}
+.user-details a:hover {
+	color: #ee3643;
+}
+.user-details a:active {
+	color: #c5cad0;
+}
+.user-details a:first-child {
+	margin-right: 32px;
+	position: relative;
+}
+.user-details a:first-child::before {
+	content: "";
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	top: 8px;
+	left: 90px;
+	background-color: #32425c;
+	border-radius: 50%;
+}
