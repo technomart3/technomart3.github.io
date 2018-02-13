@@ -1467,3 +1467,130 @@ input[type="search"]:focus::placeholder {
 	background-color: #32425c;
 	border-radius: 50%;
 }
+.breadcrumbs-list {
+	margin-top: 20px;
+	width: 358px;
+	display: flex;
+	justify-content: space-between;
+}
+.breadcrumbs-item a {
+	position: relative;
+	display: block;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #000000;
+	padding-right: 27px;
+}
+.breadcrumbs-item a:hover {
+	text-decoration: underline;
+	color: #ee3643;
+}
+.breadcrumbs-item:first-child:hover path,
+.breadcrumbs-item:first-child:hover polygon {
+	fill: #32425c;
+}
+.breadcrumbs-item:first-child:active path,
+.breadcrumbs-item:first-child:active polygon {
+	fill: #c5c5c5;
+}
+.breadcrumbs-item a:active {
+	color: #cacaca;
+}
+.breadcrumbs-item:last-child a {
+	padding-right: 0;
+}
+.breadcrumbs-item:first-child a {
+	margin-right: 20px;
+}
+.breadcrumbs-item:not(:last-child) a::after {
+	content: "";
+	width: 8px;
+	height: 8px;
+	border: 2px solid #c1c6ce;
+	border-top-style: none;
+	border-left-style: none;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 3px;
+	left: 30px;
+}
+.breadcrumbs-item:nth-child(2) a::after {
+	left: 58px;
+}
+.breadcrumbs-item:nth-child(3) a::after {
+	left: 81px;
+}
+main h1 {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #32425c;
+	margin: 0;
+	padding: 30px 0 31px 30px; 
+	margin-top: 25px;
+	background-color: #f2f6f8;
+}
+.goods-available {
+	margin-top: 20px;
+}
+.filter {
+	font-family: "PT Sans", Arial, sans-serif;
+	color: #000000;
+	width: 220px;
+}
+.filter h2 {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	margin: 0;
+	padding: 8px 0 11px 19px; 
+	background-color: #f7f3ec;
+	border-radius: 4px;
+}
+.filter-option fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+.filter-option fieldset:first-of-type {
+	margin-top: 20px;
+}
+.filter-option .price {
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.filter-option .range {
+	position: relative;
+	padding: 35px 20px;
+	background-color: #f7f3ec;
+} 
+.range p {
+	margin: 0;
+}
+.range .line {
+	width: 160px;
+	height: 2px;
+	background-color: #00ca74;
+	position: absolute;
+	top: 35px;
+}
+.range .line-left {
+	width: 180px;
+	height: 2px;
+	background-color: #d7dcde;
+}
+.range-left img {
+	position: absolute;
+	top: 26px;
+    left: 20px;
+    cursor: pointer;
+}
+.range-right img {
+	position: absolute;
+	top: 26px;
+    left: 160px;
+    cursor: pointer;
+}
