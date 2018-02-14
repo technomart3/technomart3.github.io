@@ -124,7 +124,7 @@
 						<a href="">Компания</a>
 					</li>
 					<li>
-						<a>Каталог</a>
+						<a class="active">Каталог</a>
 					</li>
 					<li>
 						<a href="">Новости</a>
@@ -144,13 +144,123 @@
 	</header>
 	<main>
 		<div class="container">
-			<div class="breadcrumbs">
-				<ul class="breadcrumbs-list">
-					<li class="breadcrumbs-item"></li>
-					<li class="breadcrumbs-item"></li>
-					<li class="breadcrumbs-item"></li>
-					<li class="breadcrumbs-item"></li>
-				</ul>
+			<ul class="breadcrumbs-list">
+				<li class="breadcrumbs-item">
+					<a href="index.html">
+						<svg x="0px" y="0px" width="15px" height="12px" 			viewBox="	0 0 15 12" enable-background="new 0 0 15 	 12" xml:space=	  "preserve">
+							<g>
+							<polygon fill="#C1C6CE" points="3,8 3,12 7,12 7,8 9,8 9,12 13,12 13,8 8,3.516 	"/>
+							<path fill="#C1C6CE" d="M14.831,6.365L13,4.751V0h-2v2.987L8.332,0.635c-0.02-0.017-0.043-0.023-0.064-0.037
+							c-0.026-0.018-0.052-0.035-0.08-0.047C8.156,0.539,8.125,0.533,8.093,0.527C8.062,0.521,8.032,0.515,8,0.515
+							c-0.031,0-0.061,0.006-0.092,0.012C7.875,0.533,7.845,0.539,7.813,0.552C7.785,0.563,7.76,0.581,7.733,0.598
+							c-0.021,0.014-0.045,0.02-0.064,0.037l-6.498,5.73C0.964,6.548,0.944,6.864,1.126,7.071C1.225,7.183,1.363,7.24,1.501,7.24
+							c0.118,0,0.236-0.041,0.331-0.125L8,1.677l6.169,5.438C14.265,7.199,14.383,7.24,14.5,7.24c0.139,0,0.276-0.058,0.375-0.169
+							C15.058,6.864,15.038,6.548,14.831,6.365z"/>
+							</g>
+						</svg>
+					</a>
+				</li>
+				<li class="breadcrumbs-item">
+					<a>Каталог</a>
+				</li>
+				<li class="breadcrumbs-item">
+					<a href="">Инструмент</a>
+				</li>
+				<li class="breadcrumbs-item">
+					<a href="">Перфораторы</a>
+				</li>
+			</ul>
+			<h1>ПЕРФОРАТОРЫ</h1>
+		</div>
+		<div class="goods-available">
+			<div class="container">
+				<section class="filter">
+					<h2>ФИЛЬТР:</h2>
+					<form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
+						<section class="filter-option">
+							<h2 class="visually-hidden">Укажите критерии для поиска</h2>
+							<fieldset>
+								<legend class="price">ЦЕНА:</legend>
+								<div class="range">
+									<p class="line"></p>
+									<p class="line-left"></p>
+									<p class="range-left">
+										<img src="img/filter-button.svg" width="20" height="23" alt="Левый ползунок">
+									</p>
+									<p class="range-right">
+										<img src="img/filter-button.svg" width="20" height="23" alt="Правый ползунок">
+									</p>
+								</div>
+								<div class="cost">
+									<p class="cost-min">
+										<input type="text" name="price-min" id="price-min" value="0" placeholder="0"> 
+										<span class="visually-hidden">
+											Минимальная цена
+										</span>
+									</p>
+									<p class="cost-max">
+										<input type="text" name="price-max" id="price-max" value="30000" placeholder="30000"> 
+										<span class="visually-hidden">
+											Максимальная цена
+										</span>
+									</p>
+								</div>
+							</fieldset>
+							<fieldset>
+								<legend>ПРОИЗВОДИТЕЛИ:</legend>
+								<ul class="maker-list">
+									<li class="maker-item">
+										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="maker-1" checked="">
+										<label for="maker-1">
+											BOSCH
+										</label>
+									</li>
+									<li class="maker-item">
+										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="intersckol" id="maker-2">
+										<label for="maker-2">
+											ИНТЕРСКОЛ
+										</label>
+									</li>
+									<li class="maker-item">
+										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="maker-3" checked="">
+										<label for="maker-3">
+											MAKITA
+										</label>
+									</li>
+									<li class="maker-item">
+										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="maker-4">
+										<label for="maker-4">
+											DEWALT
+										</label>
+									</li>
+									<li class="maker-item">
+										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="maker-5">
+										<label for="maker-5">
+											HITACHI
+										</label>
+									</li>
+								</ul>
+							</fieldset>
+							<fieldset>
+								<legend>ПИТАНИЕ:</legend>
+								<ul class="nutrition-list">
+									<li class="nutrition-item">
+										<input class="visually-hidden filter-input filter-input-radio" type="radio" name="nutrition" id="nutrition-1" checked="">
+										<label for="nutrition-1">
+											Аккумуляторные
+										</label>
+									</li>
+									<li class="nutrition-item">
+										<input class="visually-hidden filter-input filter-input-radio" type="radio" name="nutrition" id="nutrition-2">
+										<label for="nutrition-2">
+											Сетевые
+										</label>
+									</li>
+								</ul>
+							</fieldset>
+						</section>
+					</form>
+				</section>
 			</div>
 		</div>
 	</main>
