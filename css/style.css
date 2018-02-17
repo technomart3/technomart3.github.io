@@ -1772,8 +1772,67 @@ main h1 {
 	width: 700px;
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
+	font-weight: 400;
 	line-height: 18px;
 	color: #000000;
+}
+.our-goods .sorting {
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 19px 11px 19px;
+    background-color: #f7f3ec;
+    border-radius: 4px;
+}
+.sorting b {
+	font-weight: 400;
+}
+.sorting .sorting-list {
+	width: 355px;
+	display: flex;
+	justify-content: space-between;
+}
+.sorting-item a {
+	color: #cacaca;
+	border-bottom: 1px dashed #ee3643;
+}
+.sorting-item a:hover {
+	color: #000000;
+	border-bottom: 1px solid #ee3643;
+}
+.sorting-item .active,
+.sorting-item a:active {
+	color: #ee3643;
+	border-bottom: none;
+}
+.sorting .sorting-buttons {
+	width: 43px;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.sorting-buttons .button-up, 
+.sorting-buttons .button-down {
+	width: 0;
+	height: 0;
+	padding: 0;
+	border-style: solid;
+	border-width: 0 5.5px 10px 5.5px;
+	border-color: transparent transparent #c5c5c5 transparent;
+}
+.sorting-buttons .button-down {
+	transform: rotate(180deg);
+}
+.sorting-buttons .button-up:hover, 
+.sorting-buttons .button-down:hover {
+	border-color: transparent transparent #231f20 transparent;
+}
+.sorting-buttons .button-up:active, 
+.sorting-buttons .button-down:active {
+	border-color: transparent transparent #ee3643 transparent;
+}
+.sorting-buttons .active {
+	border-color: transparent transparent #ee3643 transparent;
 }
 .catalog .popular-item {
 	margin-bottom: 20px;
