@@ -619,6 +619,7 @@ input[type="search"]:focus::placeholder {
 }
 .popular-item img {
 	position: absolute;
+	top: 30px;
     left: 50%;
     transform: translateX(-50%);
     bottom: 190px;
@@ -652,7 +653,7 @@ input[type="search"]:focus::placeholder {
 	background-color: #ee3643;
 	border-radius: 5px;
 }
-.popular-item:nth-child(4) .price{
+.one-price .price{
 	margin-top: 42px;
 }
 .popular-item .price::before {
@@ -682,7 +683,6 @@ input[type="search"]:focus::placeholder {
 	transition-delay: 0.2s;
 }
 .item-buttons {
-	display: block;
 	opacity: 0;
 	margin: 0;
 	position: absolute;
@@ -1834,6 +1834,24 @@ main h1 {
 .sorting-buttons .active {
 	border-color: transparent transparent #ee3643 transparent;
 }
+.catalog .popular-list {
+	justify-content: flex-start;
+}
 .catalog .popular-item {
 	margin-bottom: 20px;
+}
+.catalog .popular-item:not(:nth-child(3n + 3)) {
+	margin-right: 17px;
+}
+.catalog .popular-item:nth-child(3) .item-buttons {
+	display: block;
+	opacity: 1;
+}
+.catalog .popular-item:nth-child(3) img {
+	display: none;
+}
+.popular-item.new {
+    background-image: url(../img/new.png);
+    background-repeat: no-repeat;
+    background-position: 160px 0;
 }
