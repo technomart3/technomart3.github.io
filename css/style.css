@@ -382,6 +382,9 @@ input[type="search"]:focus::placeholder {
 .promo-other {
 	margin-top: 20px;
 }
+.slider {
+	margin-right: auto;
+}
 .slider .wrapper {
 	width: 620px;
 	position: relative;
@@ -1854,4 +1857,58 @@ main h1 {
     background-image: url(../img/new.png);
     background-repeat: no-repeat;
     background-position: 160px 0;
+}
+.pagination-list {
+	display: flex;
+	margin-top: 30px;
+}
+.pagination-list .pagination-item:not(:last-child) {
+	margin-right: 10px;
+}
+.pagination-item a {
+	display: block;
+	color: #000000;
+	padding: 10px 14px;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+}
+.pagination-item:last-child a {
+	padding: 10px 31px;
+}
+.pagination-item a:hover {
+	border-color: #bdc6ca;
+}
+.pagination-item a:active {
+	border-color: #ee3643;
+}
+.pagination-item .active {
+	color: #fef5f6;
+	border-color: #ee3643;
+	background-color: #ee3643;
+}
+.about-perforators {
+	margin-top: 60px;
+	padding-top: 65px;
+	padding-bottom: 70px;
+	color: #000000;
+	background-color: #f2f6f8;
+}
+.about-perforators h2 {
+	margin: 0;
+	font-size: 30px;
+}
+.about-perforators p {
+	margin: 0;
+	margin-top: 35px;
+	font-size: 13px;
+	line-height: 24px;
+	word-spacing: 7px;
+}
+.catalog .main-footer-logo:hover {
+	background-color: #ca2c37;
+    border-bottom-color: #9a212a; 
+}
+.catalog .main-footer-logo:active {
+	background-color: #ba2732;
+    border-bottom-color: #8e1e26; 
 }
