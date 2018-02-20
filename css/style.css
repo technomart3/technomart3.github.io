@@ -70,7 +70,7 @@ input[type="radio"].visually-hidden {
 .search-form input {
 	width: 270px;
 	height: 43px;
-	padding: 0 10px 0 40px;
+	padding: 0 10px 0 48px;
 	color: #f0f1f2;
 	background-color: transparent;
 	border: none;
@@ -84,7 +84,7 @@ input[type="radio"].visually-hidden {
 .search-form label {
 	position: absolute;
 	top: 12px;
-	left: 15px;
+	left: 17px;
 }
 .search-form:hover {
 	background-color: #212a3a;
@@ -112,7 +112,7 @@ input[type="search"]:focus::placeholder {
 }
 .menu-item svg {
 	position: absolute;
-	left: 15px;
+	left: 17px;
 	top: 12px;
 	fill: #6a7180;
 }
@@ -124,7 +124,7 @@ input[type="search"]:focus::placeholder {
 }
 .menu-list a:not(.design) {
 	color: #ffffff;
-	padding: 12px 25px;
+    padding: 12px 0 12px 17px;
 }
 .menu-item .design {
 	color: #ffffff;
@@ -162,24 +162,28 @@ input[type="search"]:focus::placeholder {
 }
 .about .description {
 	font-size: 16px;
-	line-height: 21px;
-	font-style: italic; 
-	color: #ee3643;
-	margin: 0;
-	margin-left: 50px;
-	width: 195px;
+    line-height: 23px;
+    font-style: italic;
+    font-weight: 500;
+    color: #ee3643;
+    margin: 0;
+    margin-top: 4px;
+    margin-left: 53px;
+    width: 205px;
 }
 .contacts .phone {
-	margin: 0;
-	position: relative;
+    margin: 0;
+    position: relative;
+    padding: 10px 0;
+    border: 3px solid #ffffff;
+    width: 265px;
+    margin-left: 12px;
 }
 .contacts .phone-number {
-	display: block;
 	font-size: 21px;
-	line-height: 18px;
-	color: #ee3643;
-	border: 3px solid #ffffff;
-	padding: 8px 48px 8px 74px;
+    line-height: 18px;
+    color: #ee3643;
+    margin-left: 71px;
 }
 .contacts .phone-number::before {
 	content: "";
@@ -187,7 +191,8 @@ input[type="search"]:focus::placeholder {
 	height: 19px;
 	background-image: url(../img/icon-phone.svg);
 	position: absolute;
-	left: 13px;
+	top: 10px;
+	left: 12px;
 }
 .about .container {
 	display: flex;
@@ -195,14 +200,15 @@ input[type="search"]:focus::placeholder {
 }
 .contacts .address {
 	margin: 0;
-	margin-top: 15px;
+	margin-top: 3px;
 	font-size: 14px;
 	line-height: 24px;
 	color: #32425c;
-	margin-left: 10px; 
+	margin-left: 22px; 
 }
 .authorization {
 	margin: 0;
+	margin-top: 2px;
 	display: flex;
 }
 .authorization a {
@@ -241,13 +247,15 @@ input[type="search"]:focus::placeholder {
 	padding: 11px 24px 11px 24px;
 }
 .main-navigation {
-	margin-top: 45px;
+	margin-top: 39px;
 }
 .site-navigation {
 	display: flex;
 	justify-content: space-between;
 	background-color: #32425c;
 	border-bottom: 5px solid #293449;
+	padding-left: 21px;
+	padding-right: 25px;
 }
 .site-navigation li {
 	flex-grow: 1;
@@ -258,7 +266,8 @@ input[type="search"]:focus::placeholder {
 	line-height: 17px;
 	padding: 10px;
 	display: block;
-    padding: 13px 25px;
+    padding: 19px 25px;
+    padding-top: 20px;
 }
 .site-navigation a:hover {
 	background-color: #293449;
