@@ -282,7 +282,7 @@ input[type="search"]:focus::placeholder {
 	color: #868c95;
 }
 .promo {
-	margin-top: 60px;
+	margin-top: 48px;
 }
 .promo-list {
 	display: flex;
@@ -290,10 +290,11 @@ input[type="search"]:focus::placeholder {
 }
 .promo-list .promo-item,
 .promo-item-other {
-	position: relative;
-	width: 260px;
-	min-height: 93px;
-	padding: 13px 20px;
+    position: relative;
+    width: 300px;
+    box-sizing: border-box;
+    min-height: 93px;
+    padding: 21px 23px;
 }
 .promo-list .promo-item:first-child {
 	background-color: #ffbf47;
@@ -301,8 +302,8 @@ input[type="search"]:focus::placeholder {
 .promo-item:first-child::before {
 	content: "";
 	position: absolute;
-	left: 210px;
-	top: 30px;
+	left: 212px;
+	top: 31px;
 	background-image: url(../img/icon-1.svg);
 	width: 44px;
 	height: 65px;
@@ -323,8 +324,8 @@ input[type="search"]:focus::placeholder {
 .promo-item:nth-child(2)::before {
 	content: "";
 	position: absolute;
-	left: 190px;
-	top: 30px;
+	left: 196px;
+	top: 32px;
 	background-image: url(../img/icon-2.svg);
 	width: 75px;
 	height: 61px;
@@ -347,12 +348,12 @@ input[type="search"]:focus::placeholder {
 	line-height: 30px;
 	font-weight: 700;
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 14px;
 }
 .promo-item  a,
 .promo-item-other a {
 	display: block;
-    width: 135px;
+    width: 136px;
     text-align: center;
     font-size: 14px;
     line-height: 18px;
@@ -414,7 +415,8 @@ input[type="search"]:focus::placeholder {
 .slider-list-item span {
 	display: block;
 	margin: 0;
-	margin-top: 10px;
+	margin-top: 3px;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 }
@@ -428,15 +430,16 @@ input[type="search"]:focus::placeholder {
 }
 .slider-list-item .description {
 	background-color: rgba(0, 0, 0, 0.2);
-	padding: 20px 25px;
+	padding: 26px 25px;
+	padding-bottom: 22px;
 }
 .slider-list-item a {
 	display: block;
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
-	margin-top: 100px;
-	margin-left: 25px;
+	margin-top: 102px;
+	margin-left: 26px;
 	background-color: #ee3643;
 	width: 195px;
 	text-align: center;
@@ -454,8 +457,8 @@ input[type="search"]:focus::placeholder {
 }
 .slider-controls {
 	position: absolute;
-    top: 214px;
-    left: 297px;
+   	top: 216px;
+    left: 294px;
 }
 .slider-controls label {
 	position: relative;
@@ -475,7 +478,7 @@ input[type="search"]:focus::placeholder {
 	border-radius: 50%;
 }
 .slider-controls-buttons {
-	width: 580px;
+	width: 587px;
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -499,6 +502,7 @@ input[type="search"]:focus::placeholder {
 	height: 24px;
 	border: 3px solid #ffffff;
 	position: absolute;
+	top: 0;
 	transform: rotate(45deg);
 }
 .slider-controls-buttons label:first-child::before {
@@ -541,7 +545,7 @@ input[type="search"]:focus::placeholder {
 	width: 59px;
 	height: 72px;
 	position: absolute;
-	top: 30px;
+	top: 26px;
 	right: 45px;
 	background-image: url(../img/icon-4.svg);
 	background-repeat: no-repeat;
@@ -563,8 +567,8 @@ input[type="search"]:focus::placeholder {
 	width: 80px;
 	height: 64px;
 	position: absolute;
-	top: 30px;
-	right: 30px;
+	top: 33px;
+	right: 29px;
 	background-image: url(../img/icon-5.svg);
 	background-repeat: no-repeat;
 }
@@ -578,18 +582,20 @@ input[type="search"]:focus::placeholder {
 	justify-content: space-between;
 }
 .popular-goods {
-	margin-top: 55px;
+	margin-top: 54px;
 }
 .heading h2 {
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
 	margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 .heading {
 	display: flex;
 	justify-content: space-between;
-	padding: 30px;
+	padding: 28px;
 	background-color: #f9f5f0;
 }
 .heading span {
@@ -605,19 +611,22 @@ input[type="search"]:focus::placeholder {
 	border-radius: 5px;
 	width: 253px;
 	padding: 10px 0;
+    margin-right: -4px;
+    margin-top: -3px;
 }
 .popular-goods .popular-list,
 .catalog .popular-list {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-top: 20px;
+	margin-top: 17px;
 }
 .popular-goods .popular-item,
 .catalog  .popular-item {
 	position: relative;
-	width: 220px;
+	width: 218px;
 	min-height: 320px;
+	font-family: "PT Sans", Arial, sans-serif;
 	text-align: center;
 	border: 1px solid #eaeaea;
 }
@@ -629,12 +638,17 @@ input[type="search"]:focus::placeholder {
 .popular-item a {
 	display: block;
 }
-.popular-item img {
+.popular-item-image {
+	margin: 0;
+	position: relative;
+	width: 220px;
+	height: 167px;
+}
+.popular-item-image img {
 	position: absolute;
-	top: 30px;
+	top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    bottom: 190px;
+    transform: translate(-57%, -50%);
 }
 .popular-item h3 {
 	font-size: 18px;
@@ -642,7 +656,7 @@ input[type="search"]:focus::placeholder {
 	font-weight: 700;
 	color: #000000;
 	margin: 0;
-	margin-top: 180px;
+	margin-top: 12px;
 	padding: 0 30px;
 }
 .popular-item span {
@@ -655,24 +669,26 @@ input[type="search"]:focus::placeholder {
 	text-decoration: line-through;
 }
 .popular-item .price {
-	position: relative;
-	width: 120px;
-	padding: 10px 0;
-	margin: auto;
-    margin-top: 15px;
-	text-decoration: none;
-	color: #ffffff;
-	background-color: #ee3643;
-	border-radius: 5px;
+    position: relative;
+    width: 123px;
+    box-sizing: border-box;
+    padding: 10px 0;
+    padding-left: 13px;
+    margin-top: 11px;
+    margin-left: 42px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ee3643;
+    border-radius: 5px;
 }
 .one-price .price{
-	margin-top: 42px;
+	margin-top: 39px;
 }
 .popular-item .price::before {
 	content: "";
     position: absolute;
     top: 0;
-    left: 117px;
+    left: 120px;
     width: 0;
     height: 0;
     padding: 0;
