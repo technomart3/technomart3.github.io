@@ -596,6 +596,7 @@ input[type="search"]:focus::placeholder {
 	display: flex;
 	justify-content: space-between;
 	padding: 28px;
+	padding-left: 26px;
 	background-color: #f9f5f0;
 }
 .heading span {
@@ -870,10 +871,10 @@ input[type="search"]:focus::placeholder {
 	transform: rotate(-45deg);
 }
 .popular-manufacturers {
-	margin-top: 20px;
+	margin-top: 18px;
 }
 .popular-manufacturers .heading {
-	margin-bottom: 20px;
+	margin-bottom: 17px;
 }
 .heading .caption {
 	text-transform: uppercase;
@@ -908,12 +909,13 @@ input[type="search"]:focus::placeholder {
 }
 .services {
 	margin-top: 65px;
-	padding-top: 65px;
+	padding-top: 68px;
 	background-color: #f4f8f9;
 }
 .services h2 {
 	font-size: 30px;
 	line-height: 24px;
+	font-weight: 400;
 	color: #000000;
 	text-transform: uppercase;
 	margin: 0;
@@ -921,7 +923,7 @@ input[type="search"]:focus::placeholder {
 .services p {
 	width: 400px;
 	margin: 0;
-	margin-top: 35px;
+	margin-top: 29px;
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
@@ -931,7 +933,7 @@ input[type="search"]:focus::placeholder {
 .services-slider {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 70px;
+	margin-top: 66px;
 }
 .services-control {
 	width: 240px;
@@ -952,6 +954,7 @@ input[type="search"]:focus::placeholder {
 	font-weight: 700;
 	background-color: #32425c;
 	padding: 20px 22px;
+	padding-bottom: 18px;
 	box-shadow:
 		inset 0 -1px 0 0 #293449, 
 		inset 0 1px 0 0 #405069;
@@ -977,16 +980,20 @@ input[type="search"]:focus::placeholder {
 .services-item .wrapper {
 	display: flex;
 	justify-content: space-between;
+	margin-top: 8px;
 }
 .services-item h2 {
 	font-size: 36px;
 	line-height: 24px;
 	color: #32425c;
 }
+.services-item:first-child img {
+	margin-top: 19px;
+}
 .services-item:first-child {
 	background-image: url(../img/bg-1.png);
 	background-repeat: no-repeat;
-	background-position: 153px 0;
+    background-position: 152px 19px;
 }
 .services-item:first-child p {
 	width: 275px;
@@ -1002,10 +1009,13 @@ input[type="search"]:focus::placeholder {
 .services-item:nth-child(2) span {
 	margin-right: 200px;
 }
+.services-item:nth-child(2) img {
+	margin-top: -4px;
+}
 .services-item:nth-child(2) {
 	background-image: url(../img/bg-2.png);
 	background-repeat: no-repeat;
-	background-position: 231px 13px;
+	background-position: 233px 7px;
 }
 .services-item:last-child p {
 	width: 280px;
@@ -1018,7 +1028,7 @@ input[type="search"]:focus::placeholder {
 	background-color: #ff5357;
 	width: 195px;
 	padding: 10px 0;
-	margin-top: 30px;
+	margin-top: 28px;
 	border-radius: 5px;
 	cursor: pointer;
 }
@@ -1039,7 +1049,7 @@ input[type="search"]:focus::placeholder {
 	display: block;
 }
 .about-technomart {
-	margin-top: 80px;
+	margin-top: 76px;
 	padding-bottom: 86px;
 }
 .technomart-description {
@@ -1057,19 +1067,27 @@ input[type="search"]:focus::placeholder {
 	display: flex;
 	justify-content: space-between;
 }
-.about-technomart .promo {
+.about-technomart .promo,
+.contacts .contacts-promo {
 	margin: 0;
-	margin-top: 30px;
+	margin-top: 28px;
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	color: #000000;
 }
-.about-technomart .promo:last-of-type {
+.about-technomart .promo:first-of-type {
+	letter-spacing: 0.13px;
+}
+.about-technomart .promo:last-of-type,
+.contacts .contacts-promo {
 	padding-right: 105px;
 }
+.about-technomart .promo:last-of-type {
+	margin-top: 24px;
+}
 .companies-list {
-	margin-top: 25px;
+	margin-top: 22px;
 }
 .companies-list .companies-item {
 	position: relative;
@@ -1087,7 +1105,7 @@ input[type="search"]:focus::placeholder {
 	height: 2px;
 	background-color: #ee3643;
 	position: absolute;
-	top: 8px;
+	top: 10px;
 	left: 0;
 }
 .technomart-description .more-details {
@@ -1096,7 +1114,7 @@ input[type="search"]:focus::placeholder {
 	text-align: center;
 	text-transform: uppercase;
 	padding: 10px 0;
-	margin-top: 35px;
+	margin-top: 37px;
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
@@ -1114,7 +1132,7 @@ input[type="search"]:focus::placeholder {
 } 
 .contacts .map {
 	padding: 0;
-	margin-top: 35px;
+	margin-top: 32px;
 	cursor: pointer;
 }
 .contacts .write-us {
@@ -1122,7 +1140,7 @@ input[type="search"]:focus::placeholder {
 	font-size: 14px;
 	line-height: 18px;
 	padding: 10px 0;
-	margin-top: 40px;
+	margin-top: 36px;
 	width: 300px;
 	text-transform: uppercase;
 	color: #ffffff;
@@ -1305,8 +1323,8 @@ input[type="search"]:focus::placeholder {
 .footer-menu-list {
 	display: flex;
 	justify-content: space-between;
-	width: 550px;
-	margin-top: 40px;
+	width: 548px;
+    margin-top: 37px;
 }
 .footer-menu-item a {
 	font-size: 18px;
@@ -1321,7 +1339,7 @@ input[type="search"]:focus::placeholder {
 	text-decoration: none; 
 }
 .footer-sub-menu {
-	margin-top: 35px;
+	margin-top: 27px;
 	padding-bottom: 50px;
 	display: flex;
 	justify-content: space-between;
@@ -1329,6 +1347,7 @@ input[type="search"]:focus::placeholder {
 .footer-sub-menu .our-contacts {
 	width: 334px;
 	margin: 0;
+	padding-left: 3px;
 	font-size: 18px;
 	line-height: 24px;
 }
@@ -1350,7 +1369,7 @@ input[type="search"]:focus::placeholder {
 	text-decoration: none;
 }
 .footer-bottom {
-	padding-top: 35px;
+	padding-top: 38px;
 	padding-bottom: 30px;
 	background-color: #293449;
 }
@@ -1363,6 +1382,7 @@ input[type="search"]:focus::placeholder {
 	width: 230px;
 	font-size: 16px;
 	line-height: 18px;
+    margin-right: 44px;
 }
 .social-list {
 	min-width: 170px;
@@ -1377,9 +1397,10 @@ input[type="search"]:focus::placeholder {
 	height: 41px;
 	background-color: #212a3a;
 	border-radius: 50%;
+	margin-top: -3px;
 }
 .social-item:not(:last-child) .social-button {
-	margin-right: 5px;
+	margin-right: 4px;
 }
 .social-button:hover,
 .social-button:active {
@@ -1402,7 +1423,7 @@ input[type="search"]:focus::placeholder {
 	text-decoration: none;
 }
 .communication-email {
-	margin-right: 55px;
+	margin-right: 52px;
 }
 .communication-email,
 .communication-site {
