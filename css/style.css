@@ -715,7 +715,7 @@ input[type="search"]:focus::placeholder {
 	opacity: 0;
 	margin: 0;
 	position: absolute;
-    top: 45px;
+    top: 43px;
 }
 .item-buttons button {
 	width: 135px;
@@ -753,8 +753,9 @@ input[type="search"]:focus::placeholder {
 }
 .item-buttons .button-bookmarks {
 	color: #32425c;
-	border: 3px solid #63a63e;
-	padding: 8px 0;
+    border: 3px solid #63a63e;
+    padding: 9px 0;
+    letter-spacing: -2px;
 }
 .button-bookmarks:hover {
 	border-color: #32425c;
@@ -1159,12 +1160,12 @@ input[type="search"]:focus::placeholder {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.1);
 	z-index: 2;
 }
 .blocker .map-popup {
 	position: fixed;
-	top: 100px;
+	bottom: 190px;
 	left: 50%;
 	margin-left: -470px;
 	width: 940px;
@@ -1201,16 +1202,16 @@ input[type="search"]:focus::placeholder {
 .modal {
 	display: none;
 	position: fixed;
-	top: 100px;
+	bottom: 150px;
 	left: 50%;
-	transform: translateX(-50%);
+	margin-left: -310px;
 	width: 620px;
 	border-top: 7px solid #ee3643;
 	background-color: #ffffff;
 	box-shadow: 0 0 25px 5px #b8b8b8;
 	z-index: 2;
 	box-sizing: border-box;
-	padding-top: 50px;
+	padding-top: 46px;
 }
 .login-form .wrapper {
 	position: relative;
@@ -1227,7 +1228,7 @@ input[type="search"]:focus::placeholder {
 	font-size: 18px;
 	line-height: 18px;
 	color: #000000;
-	font-weight: 700;
+	font-weight: 400;
 	margin-bottom: 10px;
 }
 .login-form input {
@@ -1249,24 +1250,27 @@ input[type="search"]:focus::placeholder {
 }
 .login-form textarea {
 	width: 428px;
-	height: 78px;
-	padding: 14px;
-	border: 2px solid #999999;
-	border-radius: 3px;
+    height: 87px;
+    padding: 14px;
+    padding-top: 8px;
+    border: 2px solid #999999;
+    border-radius: 3px;
 }
 .login-form .inscription {
-	margin-top: 20px;
+	margin-top: 22px;
 }
 .login-form .buttons {
 	min-height: 38px;
 	margin-top: 35px;
 	padding: 37px 80px;
+	padding-top: 36px;
 	background-color: #f4f4f4;
 }
 .login-form button[type="submit"] {
 	width: 100%;
 	padding: 10px 0;
 	background-color: #ee3643;
+    font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
@@ -1280,8 +1284,8 @@ input[type="search"]:focus::placeholder {
 }
 .login-form .button-close {
 	position: absolute;
-	right: 0;
-	top: 0;
+	right: 4px;
+	top: 5px;
 	width: 30px;
 	height: 30px;
 }
@@ -1442,6 +1446,8 @@ input[type="search"]:focus::placeholder {
 }
 .menu-item:nth-child(2) .basket-active {
 	background-color: #ee3643;
+    box-sizing: border-box;
+    padding-left: 22px;
 }
 .menu-item:nth-child(2) .basket-active:hover {
 	background-color: red;
@@ -1449,8 +1455,14 @@ input[type="search"]:focus::placeholder {
 .menu-item:nth-child(2) .basket-svg {
 	fill: #f3737c;
 }
+.catalog .contacts {
+	margin-left: 18px;
+}
 .catalog .authorization {
 	display: none;
+}
+.catalog .user-authorization {
+	margin-top: -2px;
 }
 .user-info {
 	position: relative;
@@ -1496,7 +1508,7 @@ input[type="search"]:focus::placeholder {
 }
 .user-authorization .user-details {
 	margin: 0;
-	margin-top: 10px;
+	margin-top: 7px;
 	margin-left: 18px;
 }
 .user-details a {
@@ -1511,7 +1523,7 @@ input[type="search"]:focus::placeholder {
 	color: #c5cad0;
 }
 .user-details a:first-child {
-	margin-right: 32px;
+	margin-right: 28px;
 	position: relative;
 }
 .user-details a:first-child::before {
@@ -1525,10 +1537,10 @@ input[type="search"]:focus::placeholder {
 	border-radius: 50%;
 }
 .breadcrumbs-list {
-	margin-top: 20px;
-	width: 358px;
-	display: flex;
-	justify-content: space-between;
+	margin-top: 10px;
+    margin-left: -1px;
+    width: 358px;
+    display: flex;
 }
 .breadcrumbs-item a {
 	position: relative;
@@ -1536,6 +1548,7 @@ input[type="search"]:focus::placeholder {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
+	text-transform: uppercase;
 	color: #000000;
 	padding-right: 27px;
 }
@@ -1558,38 +1571,44 @@ input[type="search"]:focus::placeholder {
 	padding-right: 0;
 }
 .breadcrumbs-item:first-child a {
-	margin-right: 20px;
+	margin-right: 13px;
+}
+.breadcrumbs-item:nth-child(2) a {
+	margin-right: 13px;
+}
+.breadcrumbs-item:nth-child(3) a {
+	margin-right: 17px;
 }
 .breadcrumbs-item:not(:last-child) a::after {
 	content: "";
 	width: 8px;
 	height: 8px;
-	border: 2px solid #c1c6ce;
+	border: 1px solid #c1c6ce;
 	border-top-style: none;
 	border-left-style: none;
 	transform: rotate(-45deg);
 	position: absolute;
 	top: 3px;
-	left: 30px;
+	left: 26px;
 }
 .breadcrumbs-item:nth-child(2) a::after {
-	left: 58px;
+	left: 66px;
 }
 .breadcrumbs-item:nth-child(3) a::after {
-	left: 81px;
+	left: 95px;
 }
 main h1 {
-	font-size: 30px;
-	line-height: 30px;
-	font-weight: 400;
-	color: #32425c;
-	margin: 0;
-	padding: 30px 0 31px 30px; 
-	margin-top: 25px;
-	background-color: #f2f6f8;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #32425c;
+    margin: 0;
+    padding: 30px 0 31px 28px;
+    margin-top: 21px;
+    background-color: #f2f6f8;
 }
 .goods-available {
-	margin-top: 20px;
+	margin-top: 19px;
 }
 .goods-available .container {
 	display: flex;
@@ -1612,12 +1631,12 @@ main h1 {
 .filter-option fieldset {
 	border: none;
 	padding: 0;
-	padding-bottom: 25px;
+	padding-bottom: 26px;
 	margin: 0;
 	border-bottom: 1px solid #e5e5e5;
 }
 .filter-option fieldset:first-of-type {
-	margin-top: 20px;
+	margin-top: 11px;
 }
 .filter-option legend {
 	font-size: 17px;
@@ -1625,11 +1644,11 @@ main h1 {
 	font-weight: 700;
 }
 .filter-option .price {
-	margin-bottom: 20px;
+	margin-bottom: 16px;
 }
 .filter-option .range {
 	position: relative;
-	padding: 35px 20px;
+	padding: 38px 20px;
 	background-color: #f7f3ec;
 } 
 .range p {
@@ -1640,7 +1659,7 @@ main h1 {
 	height: 2px;
 	background-color: #00ca74;
 	position: absolute;
-	top: 35px;
+	top: 38px;
 }
 .range .line-left {
 	width: 180px;
@@ -1649,19 +1668,19 @@ main h1 {
 }
 .range-left img {
 	position: absolute;
-	top: 26px;
+	top: 29px;
     left: 20px;
     cursor: pointer;
 }
 .range-right img {
 	position: absolute;
-	top: 26px;
+	top: 29px;
     left: 160px;
     cursor: pointer;
 }
 .filter-option .cost {
 	position: relative;
-	margin-top: 10px;
+	margin-top: 8px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -1689,23 +1708,24 @@ main h1 {
 	padding: 10px 10px;
 }
 .filter-option fieldset:nth-of-type(2) {
-	margin-top: 20px;
+	margin-top: 16px;
+	padding-bottom: 22px;
 }
 .filter-option .maker-list {
-	margin-top: 25px;
+	margin-top: 14px;
 }
 .maker-item label,
 .nutrition-item label {
 	position: relative;
 	font-size: 15px;
 	line-height: 20px;
-	padding-left: 35px;
+	padding-left: 34px;
 	text-transform: uppercase;
 	cursor: pointer;
 }
 .maker-item:not(:last-child) label {
 	display: block;
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 }
 .maker-item label::before {
 	content: "";
@@ -1714,8 +1734,8 @@ main h1 {
 	border: 2px solid #c5c5c5;
 	border-radius: 4px;
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: -1px;
+	left: -1px;
 }
 .filter-input-checkbox:checked + label::after {
 	content: "";
@@ -1725,12 +1745,10 @@ main h1 {
     border-top-style: none;
     border-right-style: none;
     position: absolute;
-    top: 1px;
-    left: 6px;
-    transform: rotate(-45deg);
-    box-shadow: 
-    	inset 0 -2px 0 0 white,
-    	0 2px 0 0 white;
+    top: 0px;
+    left: 4px;
+    transform: rotate(-48deg);
+    box-shadow: inset 0 -2px 0 0 white, 0 2px 0 0 white;
 }
 .maker-item label:hover::before,
 .maker-item label:hover::after {
@@ -1755,14 +1773,20 @@ main h1 {
     	0 2px 0 0 white;
 }
 .filter-option fieldset:nth-of-type(3) {
-	margin-top: 20px;
+	margin-top: 18px;
+}
+.filter-option .nutrition {
+	letter-spacing: 0.6px;
 }
 .filter-option .nutrition-list {
-	margin-top: 20px;
+	margin-top: 12px;
 }
 .nutrition-item:not(:last-child) label {
 	display: block;
 	margin-bottom: 20px;
+}
+.nutrition-item label {
+	font-size: 14px;
 }
 .nutrition-list label::before {
 	content: "";
@@ -1807,7 +1831,7 @@ main h1 {
 	line-height: 18px;
 	border: 1px solid #e5e5e5;
 	border-radius: 4px;
-	margin-top: 75px;
+	margin-top: 52px;
 	width: 140px;
 	padding: 9px 0;
 }
@@ -1828,12 +1852,13 @@ main h1 {
 .our-goods .sorting {
 	display: flex;
 	justify-content: space-between;
-	padding: 8px 19px 11px 19px;
+	padding: 8px 17px 11px 19px;
     background-color: #f7f3ec;
     border-radius: 4px;
 }
 .sorting b {
 	font-weight: 400;
+	margin-right: 97px;
 }
 .sorting .sorting-list {
 	width: 355px;
@@ -1884,10 +1909,11 @@ main h1 {
 	border-color: transparent transparent #ee3643 transparent;
 }
 .catalog .popular-list {
-	justify-content: flex-start;
+	margin-top: 20px
 }
 .catalog .popular-item {
 	margin-bottom: 20px;
+	min-height: 316px;
 }
 .catalog .popular-item:not(:nth-child(3n + 3)) {
 	margin-right: 17px;
@@ -1906,10 +1932,10 @@ main h1 {
 }
 .pagination-list {
 	display: flex;
-	margin-top: 30px;
+	margin-top: 31px;
 }
 .pagination-list .pagination-item:not(:last-child) {
-	margin-right: 10px;
+	margin-right: 11px;
 }
 .pagination-item a {
 	display: block;
@@ -1933,22 +1959,23 @@ main h1 {
 	background-color: #ee3643;
 }
 .about-perforators {
-	margin-top: 60px;
-	padding-top: 65px;
-	padding-bottom: 70px;
-	color: #000000;
-	background-color: #f2f6f8;
+    margin-top: 60px;
+    padding-top: 62px;
+    padding-bottom: 69px;
+    color: #000000;
+    background-color: #f2f6f8;
 }
 .about-perforators h2 {
 	margin: 0;
 	font-size: 30px;
+	letter-spacing: -0.5px;
 }
 .about-perforators p {
 	margin: 0;
-	margin-top: 35px;
+	margin-top: 23px;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
-	word-spacing: 7px;
 }
 .catalog .main-footer-logo:hover {
 	background-color: #ca2c37;
